@@ -86,31 +86,46 @@ height: 30px;
     display: flex;
     flex-direction: row;
     background-color: #9cd2ac;
-    flex-basis: 100%;
+
 }
 
 .logo-head{
     flex-direction: column;
-    margin-right: 500px ;
+    list-style: none;
+    margin-left: 15vw;
+    align-self: right;
 }
 
 .txt-head{
     flex-direction: column;
-    text-align: end;
+    text-align: justify;
     list-style:none;
     background-color: #b1d6bc ;
+    align-self: left;
     margin-left: 8px;
     padding: 5px 0px 5px;
-    border: 4px solid #7caa8a  ;
+
+}
+
+#flex-productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    text-align: center;
+    background-color: #548f6d;
+    justify-content: center;
 }
 
 #items-comida {
-display:flex;
-flex-direction: row;
 width: fit-content;
-max-width: 100vw;
 text-align: center;
-background-color: #548f6d;
+background-color: #294d38;
+border: #294d38;
+}
+
+.img-comida{
+    width: 29vw;
+    height: auto;
 }
 
 .item-grid {
@@ -127,6 +142,21 @@ background-color: #548f6d;
     text-align: end;
 }
 
-/* Uso de grids (nuestros-p) */
+/* Viewports */
 
+@media all and (max-width: 600px){
 
+.texto-titulo{
+text-align: center;
+}
+
+.img-comida{
+    width: 40vw;
+    height: auto;
+    align-items: center;
+}
+
+#lista-head{
+flex-direction: column;
+}
+}
