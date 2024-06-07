@@ -4,67 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
     <header id="head">
-        <img id="logo" src="../IMG/logo.jpg" alt="Logo kuibi">
-        <div id="menu-nav"><nav>
-        <table>
-            <tr>
-            <td><a id="txt-head" href="../index.html"><h3>-Pagina principal-</h3></a></td>
-            <td><a id="txt-head" href="../Paginas/quienes-somos.html"><h3>-Quienes somos-</h3></a></td> 
-            <td><a id="txt-head" href="../Paginas/nuestros-p.html"><h3>-Nuestros productos-</h3></a></td>
-            <td><a id="txt-head" href="../Paginas/sin-gluten.html"><h3>-¿Por que sin gluten?-</h3></a></td>
-            <td><a id="txt-head" href="https://kuibi.mitiendanube.com/productos/"><h3>-¡Hace tu pedido!-</h3></a></tr></td>
-    </table></div> </header>
+        <div><nav id="menu-nav">
+            <ul id="lista-head">
+                <li><img class="logo-head" src="../IMG/logo.jpg" alt="Logo kuibi"></li>
+                <li class="txt-head"><a href="../index.html"><h3>-Pagina principal-</h3></a></li>
+                <li class="txt-head"><a href="../Paginas/quienes-somos.html"><h3>-Quienes somos-</h3></a></li>
+                <li class="txt-head"><a href="../Paginas/sin-gluten.html"><h3>-¿Por que sin gluten?-</h3></a></li>
+                <li class="txt-head"><a href="../Paginas/servicios.html"><h3>-Nuestros servicios-</h3></a></li>
+                <li class="txt-head"><a href="https://kuibi.mitiendanube.com/productos/"><h3>-¡Hace tu pedido!-</h3></a></li>
+            </ul>
+        </div> 
+    </header>
 
 <section><p><h1>Nuestros servicios</h1></p></section>
-<br>
-<section>
 
-    <h3>Productos congelados</h3>
+<Section id="grid-servicios">
 
-    <p>Alto rango de productos tanto dulces como salados, desde chipa y tartas ,hasta budines y yogurt griego.</p>
+<!--Seccion 1-->
 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1nmtinaey6-dRxs7E7j5PTJVDKdomcN1CF7ftlRpvNQ&s" alt="Linea de productos congelados">
-</section>
-<br>
-<section>
+    <h3 class="titulo-producto-servicios1">Productos congelados</h3>
 
-    <h3>Viandas</h3>
+    <img class="img-producto-servicios1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1nmtinaey6-dRxs7E7j5PTJVDKdomcN1CF7ftlRpvNQ&s" alt="Linea de productos congelados">
 
-    <p>Servicio de viandas definido de manera semanal para retiro en el local o para enviar.</p>
+    <p class="descripcion-producto-servicios1">Alto rango de productos tanto dulces como salados, desde chipa y tartas ,hasta budines y yogurt griego.</p>
 
-    <img src="../IMG/vianda.jpg" alt="Imagen de una vianda">
+<!--Seccion 2-->
 
-</section>
-<br>
-<section>
+    <h3 class="titulo-producto-servicios1">Viandas</h3>
 
-    <h3>Catering</h3>
+    <img class="img-producto-servicios2" src="../IMG/vianda.jpg" alt="Imagen de una vianda">
 
-    <p>Servicio de suministro de comidas y bebidas a aviones, trenes, colegios, etcétera. Contamos con distintos elementos para ofrecer, desde cartas de desayuno y merienda a almuerzo y cena.</p>
+    <p class="descripcion-producto-servicios1">Servicio de viandas definido de manera semanal para retiro en el local o para enviar.</p>
 
-    <img src="https://www.cateringconencanto.com/data/5589/contenidos/thumb_251161_contenidos_optimized.jpeg" alt="Multiples alimentos de produccion de catering">
-</section>
+<!--Seccion 3-->
+
+    <h3 class="titulo-producto-servicios1">Catering</h3>
+
+    <img class="img-producto-servicios3" src="https://www.cateringconencanto.com/data/5589/contenidos/thumb_251161_contenidos_optimized.jpeg" alt="Multiples alimentos de produccion de catering">
+
+    <p class="descripcion-producto-servicios1">Servicio de suministro de comidas y bebidas a aviones, trenes, colegios, etcétera. Contamos con distintos elementos para ofrecer, desde cartas de desayuno y merienda a almuerzo y cena.</p>
+
+</Section>
 
 <footer>
-
-    <table >
-    <tr>
-        <th><p></p></th>
-        <th><h3>Buscanos en nuestras redes</h3></th>
-        <th></th>
-    </tr>
-    <tr>
-        <th><p></p></th>
-        <th><img src="../IMG/logos-contacto.jpg" alt="Logo de whatsapp, instagram y facebook"></th>
-    </tr>
+    <section id="logos-contacto">
+        <a href="https://www.instagram.com/kuibi.singluten/"><img src="../IMG/logo-insta.jpg" alt="logo de instagam"></a>
+        <a href="https://www.facebook.com"><img src="../IMG/logo-fb.jpg" alt="logo de facebook"></a>
+        <a href="https://web.whatsapp.com/"><img src="../IMG/logo-wp.png" alt="logo de whatsapp"></a>
     
-    </table>
-    
-    <p>Pagina hecha por Patricio Steinsleger</p>
-    <p>Contacto: patriciosteinsleger@gmail.com</p>
+        <p class="texto-foot">Pagina hecha por Patricio Steinsleger</p>
+        <p class="texto-foot">Contacto: patriciosteinsleger@gmail.com</p>
+    </section>
 </footer>
 </body>
 </html>
