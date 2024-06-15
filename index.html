@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/styles.css">
 </head>
+
 <body>
-    <header id="head">
-        <img id="logo" src="./IMG/logo.jpg" alt="Logo kuibi">
-        <div id="menu-nav"><nav><table><tr><td id="txt-head"><a href="./Paginas/quienes-somos.html"><h3>-Quienes somos-</h3></a></td> 
-            <td id="txt-head"><a href="./Paginas/nuestros-p.html"><h3>-Nuestros productos-</h3></a></td>
-            <td id="txt-head"><a href="./Paginas/sin-gluten.html"><h3>-¿Por que sin gluten?-</h3></a></td>
-            <td id="txt-head"><a href="./Paginas/servicios.html"><h3>-Nuestros servicios-</h3></a></td>
-            <td id="txt-head"><a href="https://kuibi.mitiendanube.com/productos/"><h3>-¡Hace tu pedido!-</h3></a></tr></td>
-    </table></div> </header>
+    <header class="head">
+        <img class="logo" src="./IMG/logo.jpg" alt="Logo kuibi">
+        <div>
+            <nav class="menu-nav">
+                <a href="./Paginas/quienes-somos.html">
+                    <p class="txt-head">Quienes somos</p>
+                </a>
+                <a href="./Paginas/nuestros-p.html">
+                    <p class="txt-head">Nuestros productos</p>
+                </a>
+                <a href="./Paginas/sin-gluten.html">
+                    <p class="txt-head">¿Por que sin gluten?</p>
+                </a>
+                <a href="./Paginas/servicios.html">
+                    <p class="txt-head">Nuestros servicios</p>
+                </a>
+                <a href="https://kuibi.mitiendanube.com/productos/">
+                    <p class="txt-head">¡Hace tu pedido!</p>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-<p></p>
+    <main>
 
-<section>
-    <table>
-        <tr>
-        <td><img id="main1" src="../IMG/main 1.webp" alt="kuibi, nutrite sin gluten"></td>
-        <td><p id="txt-main1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus pariatur praesentium in qui provident dolor! Similique quae repudiandae, dolorem necessitatibus error, libero minus aperiam assumenda ratione quibusdam dignissimos, vitae ipsam. </tr></p>
-    </tr>
-    </table>
-</section>
+        <section class="imagen-y-txt">
+            <img class="main1" src="../IMG/main 1.webp" alt="kuibi, nutrite sin gluten"></td>
+            <div class="txt-main1"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+                pariatur
+                praesentium in qui provident dolor! Similique quae repudiandae, dolorem necessitatibus
+                error, libero minus aperiam assumenda ratione quibusdam dignissimos, vitae ipsam.</p>
+                </div>
+        </section>
 
-<p></p>
+        <section class="flex-productos">
+            <div class="item-grid">
+                <div>
+                    <h3>Producto 1</h3>
+                </div>
 
-<Section id="tabla-prod-1"><table> <tr>
-    <td><h2 id="tabla-prod-index">Producto 1</h2></td>
-    <td><h2 id="tabla-prod-index">Producto 2</h2></td>
-    <td><h2 id="tabla-prod-index">Producto 3</h2></td>
-</tr>
+                <div class=><img class="img-comida" src="./IMG/tarta-c.webp" alt="budin de cacao"></div>
+            </div>
 
-<tr>
-    <td><img id="tabla-prod-img" src="../IMG/chipa.webp" alt="chipa"></td>
-    <td><img id="tabla-prod-img" src="../IMG/pan-molde.webp" alt="pan de molde"></td>
-    <td><img id="tabla-prod-img" src="../IMG/tarta-c.webp" alt="tarta de calabaza"></td>
-</tr>
+            <div class="item-grid">
+                <div>
+                    <h3>Producto 2</h3>
+                </div>
 
-</table>
+                <div><img class="img-comida" src="./IMG/budin-cc.webp" alt="budin de cacao"></div>
+            </div>
 
-</Section>
+            <div class="item-grid">
+                <div>
+                    <h3>Producto 3</h3>
+                </div>
 
-<br>
-<br>
-<section>
+                <div><img class="img-comida" src="./IMG/pan-molde.webp" alt="budin de cacao"></div>
+        </section>
 
-    <h2 id="donde-estamos">¿Donde estamos?</h2> 
-<br>
-</section>
+        <section>
+            <h2 class="titulo-principal">¿Donde estamos?</h2>
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d314.72674366244917!2d-65.30485455877856!3d-26.816831592443336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942243b03d2213b9%3A0x8ba1349583679317!2sCorralon.net%20-%20Materiales%20para%20la%20Construcci%C3%B3n%20en%20Yerba%20Buena%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1715132664530!5m2!1ses!2sar"
+                width=100% height="450" style="border: 5px" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
-<section>
-<p></p>
-    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d314.72674366244917!2d-65.30485455877856!3d-26.816831592443336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942243b03d2213b9%3A0x8ba1349583679317!2sCorralon.net%20-%20Materiales%20para%20la%20Construcci%C3%B3n%20en%20Yerba%20Buena%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1715132664530!5m2!1ses!2sar" width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-</section>
-
-<footer id="tabla-abajo">
-
-<table > <!--tabla de abajo-->
-<tr>
-    <th><p id="texto-relleno-1"></p></th>
-    <th><h3>Buscanos en nuestras redes</h3></th>
-    <th></th>
-</tr>
-<tr>
-    <th><p></p></th>
-    <th><img src="../IMG/logos-contacto.jpg" alt="Logo de whatsapp, instagram y facebook"></th>
-</tr>
-
-</table>
-
-<p id="texto-firma">Pagina hecha por Patricio Steinsleger</p>
-<p id="texto-firma">Contacto: patriciosteinsleger@gmail.com</p>
-</footer>
 </body>
+
+</main>
+<!--tabla de abajo-->
+<footer class="footer">
+    <p class="texto-relleno-1">
+    <h3>Buscanos en nuestras redes</h3>
+    </p>
+    <img src="../IMG/logos-contacto.jpg" alt="Logo de whatsapp, instagram y facebook"></th>
+
+    <p class="texto-firma">Pagina hecha por Patricio Steinsleger</p>
+    <p class="texto-firma">Contacto: patriciosteinsleger@gmail.com</p>
+</footer>
+
 </html>
