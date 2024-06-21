@@ -11,7 +11,19 @@ $C-verde-nor: #548f6d ;
 $C-verde-oscuro: #1c5434;
 $C-bordes: #162c1f;
 
+/* Me gustaria poder cambiar el color de fondo acorde a la hora, pero creo que aun no llegamos a eso */
 
+.fondogral {
+    $color-fondo: 32;
+
+    @if $color-fondo == 32{
+        background-color: #d3f8de;
+    }
+
+    @else if $color-fondo == 43{
+        background-color: black;
+    }
+}
 
 .txt-head {
     display: flex;
@@ -22,6 +34,11 @@ $C-bordes: #162c1f;
     justify-content: center;
     flex-wrap: wrap;
     font-family: bold, $fuente ;
+    font-size: 16px;
+}
+
+.txt-head:hover {
+    font-size: 20px;
 }
 
 .head {
@@ -174,7 +191,8 @@ $C-bordes: #162c1f;
 }
 
 .logos-contacto {
-    background-color: #d3edec
+    background-color: #d3edec;
+    padding: 5px;
 }
 
 .texto-foot {
@@ -377,7 +395,7 @@ $C-bordes: #162c1f;
 }
 
 .mini-titulo-quienes1{
-@include titullos-q ($fuente, sticky, center);
+@include titulos-q ($fuente, sticky, center);
     background-color: #7fad94;
     border: 5px, bold, $C-bordes;
     margin-top: 15px;
@@ -386,7 +404,7 @@ $C-bordes: #162c1f;
 }
 
 .mini-titulo-quienes2{
-@include titullos-q ($fuente, sticky, center);
+@include titulos-q ($fuente, sticky, center);
     top: 15px;
     background-color: #7fad94;
     border: 5px, bold, $C-bordes;
@@ -396,7 +414,7 @@ $C-bordes: #162c1f;
 }
 
 .mini-titulo-quienes3{
-@include titullos-q ($fuente, sticky, center);
+@include titulos-q ($fuente, sticky, center);
     top: 15px;
     background-color: #7fad94;
     border: 5px, bold, $C-bordes;

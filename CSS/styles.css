@@ -1,408 +1,388 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+/* Me gustaria poder cambiar el color de fondo acorde a la hora, pero creo que aun no llegamos a eso */
+.fondogral {
+  background-color: #d3f8de;
 }
 
 .txt-head {
-    display: flex;
-    display: inline;
-    flex-direction: row;
-    border-collapse: separate;
-    border-spacing: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: bold, "Courier New";
+  display: flex;
+  display: inline;
+  flex-direction: row;
+  border-collapse: separate;
+  border-spacing: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: bold, "Courier New";
+  font-size: 16px;
+}
+
+.txt-head:hover {
+  font-size: 20px;
 }
 
 .head {
-    background-color: #9cd3ac;
-    display: flex;
-    justify-content: space-around
+  background-color: #9cd3ac;
+  display: flex;
+  justify-content: space-around;
 }
 
 .menu-nav {
-    display: flex;
-    display: inline-block;
-    vertical-align: -150%;
+  display: flex;
+  display: inline-block;
+  vertical-align: -150%;
 }
 
-.imagen-y-txt{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:300px;
-    padding-top: 10px;
-    font-family: "Courier New";
+.imagen-y-txt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  padding-top: 10px;
+  font-family: "Courier New";
 }
-
 
 .main1 {
+  height: 290px;
+  width: 49vw;
+  border: 5px solid #1c5434;
+  display: inline;
+  grid-column: 1/2;
+  border: 3px solid #162c1f;
+  background-color: #9cd2ac;
+}
+
+.txt-main1 {
+  display: inline-block;
+  justify-content: top;
+  text-align: center;
+  padding: 5px;
+  background-color: #9cd3ac;
+  height: 290px;
+  width: 49vw;
+  grid-column: 2/3;
+  border: 3px solid #162c1f;
+  background-color: #9cd2ac;
+  font-family: "Courier New";
+}
+
+.titulo-principal {
+  text-align: center;
+  display: block;
+  background-color: #5daf82;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Courier New";
+}
+
+.tabla-prod-index {
+  align-items: center;
+  background-color: #548f6d;
+  height: 30px;
+}
+
+.tabla-prod-1 {
+  background-color: #9cd3ac;
+  border: 5px solid #1c5434;
+}
+
+.tabla-prod-img {
+  max-width: 50%;
+  max-height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px #1f4e34;
+}
+
+.mapa {
+  border: 5px #1c5434;
+}
+
+.footer {
+  background-color: #d3edec;
+}
+
+.texto-relleno-1 {
+  width: 30px;
+  font-family: "Courier New";
+}
+
+.texto-firma {
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+/* Uso de flexbox (nuestros-p) */
+.lista-head {
+  display: flex;
+  flex-direction: row;
+  background-color: #9cd2ac;
+}
+
+.logo-head {
+  flex-direction: column;
+  list-style: none;
+}
+
+.txt-head {
+  flex-direction: row;
+  text-align: justify;
+  list-style: none;
+  background-color: #b1d6bc;
+  align-self: left;
+  margin-left: 8px;
+  margin-top: 25px;
+  padding: 5px 15px 5px;
+  font-family: "Courier New";
+}
+
+.flex-productos {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  text-align: center;
+  background-color: #548f6d;
+  justify-content: center;
+}
+
+.items-comida {
+  width: fit-content;
+  text-align: center;
+  background-color: #294d38;
+  border: 5px solid #1c5434;
+}
+
+.img-comida {
+  width: 29vw;
+  border: 5px solid #1c5434;
+  height: auto;
+}
+
+.item-grid {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.logos-contacto {
+  background-color: #d3edec;
+  padding: 5px;
+}
+
+.texto-foot {
+  text-align: end;
+  background-color: #d3edec;
+  font-family: "Courier New";
+}
+
+.texto-buscanos {
+  background-color: #d3edec;
+  font-family: "Courier New";
+}
+
+/* Viewports */
+@media all and (max-width: 600px) {
+  .imagen-y-txt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px;
+    padding-top: 10px;
+  }
+  .logo {
+    width: 200px;
+    height: 100px;
+  }
+  .txt-head {
+    display: block;
+  }
+  .head {
+    background-color: #9cd3ac;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .main1 {
     height: 290px;
-    width:49vw ;
+    width: 49vw;
     border: 5px solid #1c5434;
     display: inline;
     grid-column: 1/2;
     border: 3px solid #162c1f;
     background-color: #9cd2ac;
-}
-
-.txt-main1 {
+  }
+  .txt-main1 {
     display: inline-block;
     justify-content: top;
     text-align: center;
     padding: 5px;
     background-color: #9cd3ac;
     height: 290px;
-    width:49vw;
-    grid-column: 2/3;
+    width: 49vw;
+    grid-column: -2/-1;
     border: 3px solid #162c1f;
     background-color: #9cd2ac;
-    font-family: "Courier New";
-}
-
-.titulo-principal {
+  }
+  .titulo-principal {
     text-align: center;
-    display:block;
-    background-color: #5daf82;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: "Courier New";
-}
-
-.tabla-prod-index {
-    align-items: center;
-    background-color: #548f6d;
-    height: 30px;
-}
-
-.tabla-prod-1 {
-    background-color: #9cd3ac;
-    border: 5px solid #1c5434
-}
-
-.tabla-prod-img {
-    max-width: 50%;
-    max-height: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px #1f4e34;
-}
-
-.mapa {
-    border: 5px #1c5434;
-}
-
-.footer {
-    background-color: #d3edec;
-}
-
-.texto-relleno-1 {
-    width: 30px;
-    font-family: "Courier New";
-}
-
-.texto-firma {
-    text-align: right;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
-
-/* Uso de flexbox (nuestros-p) */
-.lista-head {
-    display: flex;
-    flex-direction: row;
-    background-color: #9cd2ac;
-
-}
-
-.logo-head {
-    flex-direction: column;
-    list-style: none;
-    
-}
-
-.txt-head {
-    flex-direction: row;
-    text-align: justify;
-    list-style: none;
-    background-color: #b1d6bc;
-    align-self: left;
-    margin-left: 8px;
-    margin-top: 25px;
-    padding: 5px 15px 5px;
-    font-family: "Courier New";
-}
-
-.flex-productos {
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-    text-align: center;
-    background-color: #548f6d;
-    justify-content: center;
-
-}
-
-.items-comida {
-    width: fit-content;
-    text-align: center;
-    background-color: #294d38;
-    border: 5px solid #1c5434;
-}
-
-.img-comida {
-    width: 29vw;
-    border: 5px solid #1c5434;
+  }
+  .img-comida {
+    width: 40vw;
     height: auto;
-}
-
-.item-grid {
-    display: flex;
+    align-items: center;
+  }
+  .lista-head {
     flex-direction: column;
-    margin: 20px;
+  }
+  /* Viewports footer*/
+  .logos-contacto {
+    display: flex;
+    justify-content: center;
+  }
+  .txt-main1 {
+    width: 100vw;
+  }
+  .main1 {
+    width: 100vw;
+  }
 }
-
-.logos-contacto {
-    background-color: #d3edec
-}
-
-.texto-foot {
-    text-align: end;
-    background-color: #d3edec;
-    font-family: "Courier New";
-}
-.texto-buscanos{
-    background-color: #d3edec;
-    font-family: "Courier New";
-}
-
-
-/* Viewports */
-
-@media all and (max-width: 600px) {
-
-    .imagen-y-txt{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px 300px;
-        padding-top: 10px;
-    }
-    
-    .logo{
-        width: 200px;
-        height: 100px;
-    }
-
-    .txt-head{
-        display: block;
-    }
-
-    .head {
-        background-color: #9cd3ac;
-        flex-direction: column;
-        justify-content: space-around
-    }
-    
-    .main1 {
-        height: 290px;
-        width:49vw ;
-        border: 5px solid #1c5434;
-        display: inline;
-        grid-column: 1/2;
-        border: 3px solid #162c1f;
-        background-color: #9cd2ac;
-    }
-    
-    .txt-main1 {
-        display: inline-block;
-        justify-content: top;
-        text-align: center;
-        padding: 5px;
-        background-color: #9cd3ac;
-        height: 290px;
-        width:49vw;
-        grid-column: -2/-1;
-        border: 3px solid #162c1f;
-        background-color: #9cd2ac
-    }
-
-    .titulo-principal {
-        text-align: center;
-    }
-
-    .img-comida {
-        width: 40vw;
-        height: auto;
-        align-items: center;
-    }
-
-    .lista-head {
-        flex-direction: column;
-    }
-
-    /* Viewports footer*/
-    .logos-contacto{
-        display: flex;
-        justify-content: center;
-    }
-
-    .txt-main1{
-        width: 100vw;
-    }
-
-    .main1{
-        width: 100vw;
-    }
-
-
-}
-
-
 /* Uso de grids (servicios) */
-
 @media screen and (max-width: 601px) {
-
-    .grid-servicios {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 80px 200px 80px 200px 80px 200px;
-        border: 1px solid #162c1f;
-        background-color: #5daf82;
-    }
-
-    .titulo-producto-servicios1 {
-        grid-column: 1/3;
-        border: 3px solid #162c1f;
-        background-color: #427458;
-        font-family: "Courier New";
-    }
-
-    .descripcion-producto-servicios1 {
-        grid-column: 1/3;
-        border: 3px solid #162c1f;
-    }
-
-    .img-producto-servicios1 {
-        grid-row: -7/ span -5;
-        max-width: 85%;
-        border: 3px solid #162c1f;
-        object-fit: cover;
-    }
-
-    .img-producto-servicios2 {
-        grid-row: -5/ span -3;
-        max-width: 85%;
-        border: 3px solid #162c1f;
-        object-fit: cover;
-    }
-
-    .img-producto-servicios3 {
-        grid-row: -3/ span -1;
-        max-width: 85%;
-        border: 3px solid #162c1f;
-        object-fit: cover;
-    }
-
-}
-
-.grid-servicios {
+  .grid-servicios {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 80px 200px 80px 200px 80px 200px;
     border: 1px solid #162c1f;
     background-color: #5daf82;
+  }
+  .titulo-producto-servicios1 {
+    grid-column: 1/3;
+    border: 3px solid #162c1f;
+    background-color: #427458;
+    font-family: "Courier New";
+  }
+  .descripcion-producto-servicios1 {
+    grid-column: 1/3;
+    border: 3px solid #162c1f;
+  }
+  .img-producto-servicios1 {
+    grid-row: -7/span -5;
+    max-width: 85%;
+    border: 3px solid #162c1f;
+    object-fit: cover;
+  }
+  .img-producto-servicios2 {
+    grid-row: -5/span -3;
+    max-width: 85%;
+    border: 3px solid #162c1f;
+    object-fit: cover;
+  }
+  .img-producto-servicios3 {
+    grid-row: -3/span -1;
+    max-width: 85%;
+    border: 3px solid #162c1f;
+    object-fit: cover;
+  }
+}
+.grid-servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 200px 80px 200px 80px 200px;
+  border: 1px solid #162c1f;
+  background-color: #5daf82;
 }
 
 .titulo-producto-servicios1 {
-    grid-column: 1/5;
-    border: 3px solid #162c1f;
-    background-color: #427458;
-    text-align: center;
-    padding: 20px;
-    font-family: "Courier New";
+  grid-column: 1/5;
+  border: 3px solid #162c1f;
+  background-color: #427458;
+  text-align: center;
+  padding: 20px;
+  font-family: "Courier New";
 }
 
 .descripcion-producto-servicios1 {
-    grid-column: 1/5;
-    border: 3px solid #162c1f;
+  grid-column: 1/5;
+  border: 3px solid #162c1f;
 }
 
 .img-producto-servicios1 {
-    grid-row: -7/ span -5;
-    border: 3px solid #162c1f;
-    width: 280px;
-    height: 280px;
+  grid-row: -7/span -5;
+  border: 3px solid #162c1f;
+  width: 280px;
+  height: 280px;
 }
 
 .img-producto-servicios2 {
-    grid-row: -5/ span -3;
-    width: 280px;
-    height: 280px;
-    border: 3px solid #162c1f;
+  grid-row: -5/span -3;
+  width: 280px;
+  height: 280px;
+  border: 3px solid #162c1f;
 }
 
 .img-producto-servicios3 {
-    grid-row: -3/ span -1;
-    width: 280px;
-    height: 280px;
-    border: 3px solid #162c1f;
+  grid-row: -3/span -1;
+  width: 280px;
+  height: 280px;
+  border: 3px solid #162c1f;
 }
 
-.mini-titulo{
-    background-color: #7fad94;
-    border: 5px, bold, #162c1f;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 5px;
-    font-family: "Courier New";
+.mini-titulo {
+  background-color: #7fad94;
+  border: 5px, bold, #162c1f;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-family: "Courier New";
 }
 
-
-.mini-titulo-quienes1{
-    font-family: "Courier New";
-    position: sticky;
-    top: 15px;
-    background-color: #7fad94;
-    border: 5px, bold, #162c1f;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 5px;
-    text-align: center;
+/* Uso de mixin */
+.mini-titulo-quienes1 {
+  font-family: "Courier New";
+  position: sticky;
+  text-align: center;
+  background-color: #7fad94;
+  border: 5px, bold, #162c1f;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
 }
 
-
-.mini-titulo-quienes2{
-    font-family: "Courier New";
-    position: sticky;
-    top: 15px;
-    background-color: #7fad94;
-    border: 5px, bold, #162c1f;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 5px;
-    text-align: center;
+.mini-titulo-quienes2 {
+  font-family: "Courier New";
+  position: sticky;
+  text-align: center;
+  top: 15px;
+  background-color: #7fad94;
+  border: 5px, bold, #162c1f;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
 }
 
-.mini-titulo-quienes3{
-    font-family: "Courier New";
-    position: sticky;
-    top: 15px;
-    background-color: #7fad94;
-    border: 5px, bold, #162c1f;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 5px;
-    text-align: center;
+.mini-titulo-quienes3 {
+  font-family: "Courier New";
+  position: sticky;
+  text-align: center;
+  top: 15px;
+  background-color: #7fad94;
+  border: 5px, bold, #162c1f;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
 }
 
-.img-sin-gluten{
-    float: left;
-    margin: 5px;
-    border: 3px solid #162c1f;
-    background-color: #162c1f;
-    width: 250px;
-    height: 200px;
+.img-sin-gluten {
+  float: left;
+  margin: 5px;
+  border: 3px solid #162c1f;
+  background-color: #162c1f;
+  width: 250px;
+  height: 200px;
 }
 
+/*# sourceMappingURL=styles.css.map */
