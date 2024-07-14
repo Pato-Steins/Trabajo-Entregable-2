@@ -58,9 +58,9 @@
 
 .txt-main1 {
   display: inline-block;
-  justify-content: top;
+  justify-content: center;
   text-align: center;
-  padding: 5px;
+  padding: 60px 5px 5px 5px;
   background-color: #9cd3ac;
   height: 290px;
   width: 49vw;
@@ -68,6 +68,14 @@
   border: 3px solid #162c1f;
   background-color: #9cd2ac;
   font-family: "Courier New";
+}
+
+.texto-indx-grid{
+  padding: 5px 5px 25px 5px;
+  font-family: "Courier New";
+  font-size: 20px;
+  font-weight: 600;
+  text-justify: distribute;
 }
 
 .titulo-principal {
@@ -143,9 +151,10 @@
 }
 
 .flex-productos {
+  border-bottom: 50px #d3f8de;
   display: flex;
   flex-wrap: wrap;
-  width: fit-content;
+  width: 100vw;
   text-align: center;
   background-color: #548f6d;
   justify-content: center;
@@ -255,7 +264,7 @@
   .grid-servicios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 200px 80px 200px 80px 200px;
+    grid-template-rows: 80px 00px 80px 200px 80px 200px;
     border: 1px solid #162c1f;
     background-color: #5daf82;
   }

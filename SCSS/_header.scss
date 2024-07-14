@@ -1,0 +1,32 @@
+
+/* No soy capaz de hacer que la lista se muestre de manera horizontal */
+
+a {
+    p{
+    display: flex;
+    display: inline;
+    flex-direction: row;
+    border-collapse: separate;
+    border-spacing: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: bold, "Courier New";
+    font-size: 16px;
+}
+}
+
+.head {
+    background-color: $C-verde-claro;
+    display: flex;
+    justify-content: space-around
+}
+
+.txt-head:hover {
+    font-size: 20px;
+}
+
+.menu-nav {
+    display: flex;
+    display: inline-block;
+    vertical-align: -150%;
+}

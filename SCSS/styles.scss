@@ -13,6 +13,9 @@ $C-bordes: #162c1f;
 
 /* Me gustaria poder cambiar el color de fondo acorde a la hora, pero creo que aun no llegamos a eso */
 
+
+@import "header.scss";
+
 .fondogral {
     $color-fondo: 32;
 
@@ -23,34 +26,6 @@ $C-bordes: #162c1f;
     @else if $color-fondo == 43{
         background-color: black;
     }
-}
-
-.txt-head {
-    display: flex;
-    display: inline;
-    flex-direction: row;
-    border-collapse: separate;
-    border-spacing: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: bold, $fuente ;
-    font-size: 16px;
-}
-
-.txt-head:hover {
-    font-size: 20px;
-}
-
-.head {
-    background-color: $C-verde-claro;
-    display: flex;
-    justify-content: space-around
-}
-
-.menu-nav {
-    display: flex;
-    display: inline-block;
-    vertical-align: -150%;
 }
 
 .imagen-y-txt{
@@ -149,18 +124,6 @@ $C-bordes: #162c1f;
     
 }
 
-.txt-head {
-    flex-direction: row;
-    text-align: justify;
-    list-style: none;
-    background-color: #b1d6bc;
-    align-self: left;
-    margin-left: 8px;
-    margin-top: 25px;
-    padding: 5px 15px 5px;
-    font-family: $fuente;
-}
-
 .flex-productos {
     display: flex;
     flex-wrap: wrap;
@@ -170,6 +133,8 @@ $C-bordes: #162c1f;
     justify-content: center;
 
 }
+
+
 
 .items-comida {
     width: fit-content;
