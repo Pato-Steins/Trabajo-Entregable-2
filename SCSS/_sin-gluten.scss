@@ -1,0 +1,21 @@
+
+.mini-titulo{
+    background-color: #7fad94;
+    border: 5px, bold, $C-bordes;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-family: $fuente;
+    border-radius: 45px;
+}
+
+.img-sin-gluten{
+    float: left;
+    margin: 15px;
+    border: 3px solid $C-bordes;
+    background-color: $C-bordes;
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+}
+

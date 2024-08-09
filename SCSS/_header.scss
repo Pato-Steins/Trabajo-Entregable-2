@@ -15,14 +15,35 @@ a {
 }
 }
 
-.head {
-    background-color: $C-verde-claro;
+.lista-head {
     display: flex;
-    justify-content: space-around
+    flex-direction: row;
+    list-style: none;
+    padding: #d0e0d5 10px;
+}
+
+.ele-lista-head{
+    border: solid 1px #d0e0d5;
+    padding: 5px;
+}
+
+.txt-head{
+    border: 15px #b0d8bb;
+    background-color: #b0d8bb;
+    justify-content: space-evenly
+}
+
+.head {
+    background-color: #9cd3ac;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .txt-head:hover {
     font-size: 20px;
+    animation-name: head;
+    animation-duration: 2s;
 }
 
 .menu-nav {
@@ -30,3 +51,9 @@ a {
     display: inline-block;
     vertical-align: -150%;
 }
+
+@keyframes head {
+    from {background-color: $C-verde-claro;}
+    to {background-color: #d0e0d5}
+  }
+

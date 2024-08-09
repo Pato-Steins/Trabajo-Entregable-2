@@ -1,16 +1,13 @@
 * {
-  margin: 0;
+  margin: 3px;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Variables */
-/* Me gustaria poder cambiar el color de fondo acorde a la hora, pero creo que aun no llegamos a eso */
-.fondogral {
-  background-color: #d3f8de;
-}
-
-.txt-head {
+/* Me gustaria poder cambiar el color de fondo acorde a la hora, pero creo que aun no llegamos a eso, me imagino que estara compuesto de manera similar al apartado fondo gral */
+/* No soy capaz de hacer que la lista se muestre de manera horizontal */
+a p {
   display: flex;
   display: inline;
   flex-direction: row;
@@ -22,8 +19,22 @@
   font-size: 16px;
 }
 
-.txt-head:hover {
-  font-size: 20px;
+.lista-head {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: #d0e0d5 10px;
+}
+
+.ele-lista-head {
+  border: solid 1px #d0e0d5;
+  padding: 5px;
+}
+
+.txt-head {
+  border: 15px #b0d8bb;
+  background-color: #b0d8bb;
+  justify-content: space-evenly;
 }
 
 .head {
@@ -32,12 +43,26 @@
   justify-content: space-around;
 }
 
+.txt-head:hover {
+  font-size: 20px;
+  animation-name: head;
+  animation-duration: 2s;
+}
+
 .menu-nav {
   display: flex;
   display: inline-block;
   vertical-align: -150%;
 }
 
+@keyframes head {
+  from {
+    background-color: #9cd3ac;
+  }
+  to {
+    background-color: #d0e0d5;
+  }
+}
 .imagen-y-txt {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -58,9 +83,9 @@
 
 .txt-main1 {
   display: inline-block;
-  justify-content: center;
+  justify-content: top;
   text-align: center;
-  padding: 60px 5px 5px 5px;
+  padding: 5px;
   background-color: #9cd3ac;
   height: 290px;
   width: 49vw;
@@ -70,21 +95,246 @@
   font-family: "Courier New";
 }
 
-.texto-indx-grid{
-  padding: 5px 5px 25px 5px;
+.flex-productos {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  text-align: center;
+  background-color: #548f6d;
+  justify-content: center;
+}
+
+.texto-indx-grid {
   font-family: "Courier New";
-  font-size: 20px;
-  font-weight: 600;
-  text-justify: distribute;
+  background-color: #9cd3ac;
+  border-radius: 45px;
+  padding: 15px;
+}
+
+.flex-productos {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  text-align: center;
+  background-color: #548f6d;
+  justify-content: center;
+}
+
+.mini-titulo-quienes1 {
+  font-family: "Courier New";
+  position: sticky;
+  text-align: center;
+  top: 15px;
+  background-color: #7fad94;
+  border: 5px, bold, #162c1f;
+  border-radius: 45px;
+  max-width: 800px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  margin: auto;
+}
+
+.mini-titulo-quienes2 {
+  font-family: "Courier New";
+  position: sticky;
+  text-align: center;
+  top: 15px;
+  background-color: #7fad94;
+  border: 5px, bold, #162c1f;
+  border-radius: 45px;
+  max-width: 800px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  margin: auto;
+  border-radius: 45px;
+}
+
+.mini-titulo-quienes3 {
+  font-family: "Courier New";
+  position: sticky;
+  text-align: center;
+  top: 15px;
+  background-color: #7fad94;
+  border: 5px, bold, #162c1f;
+  border-radius: 45px;
+  max-width: 800px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  margin: auto;
+}
+
+.img-quienes {
+  display: inline;
+  float: right;
+  margin: 5px;
+  border: 3px solid #1c5434;
+  max-width: 500px;
+  max-height: 540px;
+}
+
+.img-quienes-izq {
+  display: inline;
+  float: left;
+  margin: 5px;
+  border: 3px solid #1c5434;
+  max-width: 500px;
+  max-height: 540px;
+}
+
+.sector-sin-gluten {
+  border: 2px solid #162c1f;
+  padding: 10px;
+  background-color: #9cd3ac;
+  border-radius: 45px;
+}
+
+@media all and (max-width: 600px) {
+  .img-quienes {
+    max-width: 200px;
+  }
+  .img-quienes-izq {
+    max-width: 200px;
+  }
+}
+.grid-servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 200px 80px 280px 80px 220px;
+  border: 1px solid #162c1f;
+  background-color: #5daf82;
+}
+
+.img-producto-servicios1 {
+  grid-row: -7/span -5;
+  border: 3px solid #162c1f;
+  width: 280px;
+  height: 280px;
+}
+
+.img-producto-servicios2 {
+  grid-row: -5/span -3;
+  width: 280px;
+  height: 280px;
+  border: 3px solid #162c1f;
+}
+
+.img-producto-servicios3 {
+  grid-row: -3/span -1;
+  width: 280px;
+  height: 280px;
+  border: 3px solid #162c1f;
+}
+
+.titulo-producto-servicios1 {
+  grid-column: 1/5;
+  border: 3px solid #162c1f;
+  background-color: #427458;
+  text-align: center;
+  padding: 20px;
+  font-family: "Courier New";
+}
+
+.descripcion-producto-servicios1 {
+  grid-column: 1/5;
+  border: 3px solid #162c1f;
+  background-color: #9cd3ac;
+  font-family: "Courier New";
+  padding: 5px;
+}
+
+@media screen and (max-width: 601px) {
+  .grid-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 500px 80px 600px 80px 500px;
+    border: 1px solid #162c1f;
+    background-color: #5daf82;
+  }
+  .titulo-producto-servicios1 {
+    grid-column: 1/3;
+    border: 3px solid #162c1f;
+    background-color: #427458;
+    font-family: "Courier New";
+  }
+  .descripcion-producto-servicios1 {
+    grid-column: 1/3;
+    border: 3px solid #162c1f;
+    font-family: "Courier New";
+  }
+  .img-producto-servicios1 {
+    grid-row: -7/span -5;
+    max-width: 85%;
+    border: 3px solid #162c1f;
+    object-fit: cover;
+  }
+  .img-producto-servicios2 {
+    grid-row: -5/span -3;
+    max-width: 85%;
+    border: 3px solid #162c1f;
+    object-fit: cover;
+  }
+  .img-producto-servicios3 {
+    grid-row: -3/span -1;
+    max-width: 85%;
+    border: 3px solid #162c1f;
+    object-fit: cover;
+  }
+}
+.mini-titulo {
+  background-color: #7fad94;
+  border: 5px, bold, #162c1f;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-family: "Courier New";
+  border-radius: 45px;
+}
+
+.img-sin-gluten {
+  float: left;
+  margin: 15px;
+  border: 3px solid #162c1f;
+  background-color: #162c1f;
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.footer {
+  background-color: #d3edec;
+}
+
+.texto-buscanos {
+  background-color: #d3edec;
+  font-family: "Courier New";
+}
+
+footer article section a img {
+  background-color: #d3edec;
+  padding: 5px;
+}
+footer article p {
+  text-align: end;
+  background-color: #d3edec;
+  font-family: "Courier New";
+}
+
+body {
+  background-color: #dff8e7;
 }
 
 .titulo-principal {
   text-align: center;
   display: block;
   background-color: #5daf82;
+  border: 3px solid #162c1f;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Courier New";
+  border-radius: 45px;
 }
 
 .tabla-prod-index {
@@ -107,14 +357,6 @@
   border: 5px #1f4e34;
 }
 
-.mapa {
-  border: 5px #1c5434;
-}
-
-.footer {
-  background-color: #d3edec;
-}
-
 .texto-relleno-1 {
   width: 30px;
   font-family: "Courier New";
@@ -124,40 +366,6 @@
   text-align: right;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-}
-
-/* Uso de flexbox (nuestros-p) */
-.lista-head {
-  display: flex;
-  flex-direction: row;
-  background-color: #9cd2ac;
-}
-
-.logo-head {
-  flex-direction: column;
-  list-style: none;
-}
-
-.txt-head {
-  flex-direction: row;
-  text-align: justify;
-  list-style: none;
-  background-color: #b1d6bc;
-  align-self: left;
-  margin-left: 8px;
-  margin-top: 25px;
-  padding: 5px 15px 5px;
-  font-family: "Courier New";
-}
-
-.flex-productos {
-  border-bottom: 50px #d3f8de;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  text-align: center;
-  background-color: #548f6d;
-  justify-content: center;
 }
 
 .items-comida {
@@ -177,22 +385,6 @@
   display: flex;
   flex-direction: column;
   margin: 20px;
-}
-
-.logos-contacto {
-  background-color: #d3edec;
-  padding: 5px;
-}
-
-.texto-foot {
-  text-align: end;
-  background-color: #d3edec;
-  font-family: "Courier New";
-}
-
-.texto-buscanos {
-  background-color: #d3edec;
-  font-family: "Courier New";
 }
 
 /* Viewports */
@@ -238,14 +430,12 @@
   }
   .titulo-principal {
     text-align: center;
+    padding: 5px;
   }
   .img-comida {
     width: 40vw;
     height: auto;
     align-items: center;
-  }
-  .lista-head {
-    flex-direction: column;
   }
   /* Viewports footer*/
   .logos-contacto {
@@ -258,140 +448,6 @@
   .main1 {
     width: 100vw;
   }
-}
-/* Uso de grids (servicios) */
-@media screen and (max-width: 601px) {
-  .grid-servicios {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 00px 80px 200px 80px 200px;
-    border: 1px solid #162c1f;
-    background-color: #5daf82;
-  }
-  .titulo-producto-servicios1 {
-    grid-column: 1/3;
-    border: 3px solid #162c1f;
-    background-color: #427458;
-    font-family: "Courier New";
-  }
-  .descripcion-producto-servicios1 {
-    grid-column: 1/3;
-    border: 3px solid #162c1f;
-  }
-  .img-producto-servicios1 {
-    grid-row: -7/span -5;
-    max-width: 85%;
-    border: 3px solid #162c1f;
-    object-fit: cover;
-  }
-  .img-producto-servicios2 {
-    grid-row: -5/span -3;
-    max-width: 85%;
-    border: 3px solid #162c1f;
-    object-fit: cover;
-  }
-  .img-producto-servicios3 {
-    grid-row: -3/span -1;
-    max-width: 85%;
-    border: 3px solid #162c1f;
-    object-fit: cover;
-  }
-}
-.grid-servicios {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px 200px 80px 200px 80px 200px;
-  border: 1px solid #162c1f;
-  background-color: #5daf82;
-}
-
-.titulo-producto-servicios1 {
-  grid-column: 1/5;
-  border: 3px solid #162c1f;
-  background-color: #427458;
-  text-align: center;
-  padding: 20px;
-  font-family: "Courier New";
-}
-
-.descripcion-producto-servicios1 {
-  grid-column: 1/5;
-  border: 3px solid #162c1f;
-}
-
-.img-producto-servicios1 {
-  grid-row: -7/span -5;
-  border: 3px solid #162c1f;
-  width: 280px;
-  height: 280px;
-}
-
-.img-producto-servicios2 {
-  grid-row: -5/span -3;
-  width: 280px;
-  height: 280px;
-  border: 3px solid #162c1f;
-}
-
-.img-producto-servicios3 {
-  grid-row: -3/span -1;
-  width: 280px;
-  height: 280px;
-  border: 3px solid #162c1f;
-}
-
-.mini-titulo {
-  background-color: #7fad94;
-  border: 5px, bold, #162c1f;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 5px;
-  font-family: "Courier New";
-}
-
-/* Uso de mixin */
-.mini-titulo-quienes1 {
-  font-family: "Courier New";
-  position: sticky;
-  text-align: center;
-  background-color: #7fad94;
-  border: 5px, bold, #162c1f;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 5px;
-}
-
-.mini-titulo-quienes2 {
-  font-family: "Courier New";
-  position: sticky;
-  text-align: center;
-  top: 15px;
-  background-color: #7fad94;
-  border: 5px, bold, #162c1f;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 5px;
-}
-
-.mini-titulo-quienes3 {
-  font-family: "Courier New";
-  position: sticky;
-  text-align: center;
-  top: 15px;
-  background-color: #7fad94;
-  border: 5px, bold, #162c1f;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 5px;
-}
-
-.img-sin-gluten {
-  float: left;
-  margin: 5px;
-  border: 3px solid #162c1f;
-  background-color: #162c1f;
-  width: 250px;
-  height: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */
