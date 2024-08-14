@@ -9,7 +9,7 @@
 
 .main1 {
     height: 290px;
-    width:49vw ;
+    width:46vw ;
     border: 5px solid $C-verde-oscuro;
     display: inline;
     grid-column: 1/2;
@@ -24,7 +24,7 @@
     padding: 5px;
     background-color: $C-verde-claro;
     height: 290px;
-    width:49vw;
+    width:46vw;
     grid-column: 2/3;
     border: 3px solid $C-bordes;
     background-color: #9cd2ac;
@@ -38,6 +38,7 @@
     text-align: center;
     background-color: $C-verde-nor;
     justify-content: center;
+    border-radius: 45px;
 
 }
 

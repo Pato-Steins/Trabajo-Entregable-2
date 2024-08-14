@@ -73,12 +73,13 @@ a p {
 
 .main1 {
   height: 290px;
-  width: 49vw;
+  width: 46vw;
   border: 5px solid #1c5434;
   display: inline;
   grid-column: 1/2;
   border: 3px solid #162c1f;
   background-color: #9cd2ac;
+  border-radius: 45px;
 }
 
 .txt-main1 {
@@ -93,6 +94,7 @@ a p {
   border: 3px solid #162c1f;
   background-color: #9cd2ac;
   font-family: "Courier New";
+  border-radius: 45px;
 }
 
 .flex-productos {
@@ -170,22 +172,24 @@ a p {
   display: inline;
   float: right;
   margin: 5px;
-  border: 3px solid #1c5434;
+  border: 5px solid #1c5434;
   max-width: 500px;
   max-height: 540px;
+  border-radius: 45px;
 }
 
 .img-quienes-izq {
   display: inline;
   float: left;
   margin: 5px;
-  border: 3px solid #1c5434;
+  border: 5px solid #1c5434;
   max-width: 500px;
   max-height: 540px;
+  border-radius: 45px;
 }
 
 .sector-sin-gluten {
-  border: 2px solid #162c1f;
+  border: 5px solid #162c1f;
   padding: 10px;
   background-color: #9cd3ac;
   border-radius: 45px;
@@ -379,6 +383,7 @@ body {
   width: 29vw;
   border: 5px solid #1c5434;
   height: auto;
+  border-radius: 45px;
 }
 
 .item-grid {
@@ -409,7 +414,7 @@ body {
   }
   .main1 {
     height: 290px;
-    width: 49vw;
+    width: 93vw;
     border: 5px solid #1c5434;
     display: inline;
     grid-column: 1/2;
@@ -423,7 +428,7 @@ body {
     padding: 5px;
     background-color: #9cd3ac;
     height: 290px;
-    width: 49vw;
+    width: 93vw;
     grid-column: -2/-1;
     border: 3px solid #162c1f;
     background-color: #9cd2ac;
@@ -441,12 +446,6 @@ body {
   .logos-contacto {
     display: flex;
     justify-content: center;
-  }
-  .txt-main1 {
-    width: 100vw;
-  }
-  .main1 {
-    width: 100vw;
   }
 }
 

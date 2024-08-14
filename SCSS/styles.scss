@@ -130,6 +130,7 @@ body {
         grid-column: 1/2;
         border: 3px solid $C-bordes;
         background-color: #9cd2ac;
+        border-radius: 45px;
     }
     
     .txt-main1 {
@@ -139,10 +140,11 @@ body {
         padding: 5px;
         background-color: $C-verde-claro;
         height: 290px;
-        width:49vw;
+        width:48vw;
         grid-column: -2/-1;
         border: 3px solid $C-bordes;
-        background-color: #9cd2ac
+        background-color: #9cd2ac;
+        border-radius: 45px;
     }
 
     .titulo-principal {
@@ -164,10 +166,10 @@ body {
     }
 
     .txt-main1{
-        width: 100vw;
+        width: 93vw;
     }
 
     .main1{
-        width: 100vw;
+        width: 93vw;
     }
 }
